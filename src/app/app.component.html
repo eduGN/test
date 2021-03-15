@@ -3,7 +3,7 @@
 <div class="container">
   <div class="row justify-content-md-center">
       <div class="card m-1 bg-dark d-flex align-items-center" style="width: 18rem; min-width: 18rem;" *ngFor="let pokemon of pokemons">
-        <h4 class="text-light">{{pokemon.name}}</h4>
+        <h4 class="text-light">{{pokemon.name}} <span class="text-secondary">&nbsp;&nbsp;#{{pokemon.number}}</span> </h4>
         <img src={{pokemon.img}} class="card-img-top" alt={{pokemon.name}}>
         <div class="card-body w-100">
           <ul class="list-group">
